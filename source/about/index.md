@@ -1,0 +1,24 @@
+---
+title: About Me
+---
+
+### Motto
+
+Do What U Like.
+
+### Education
+- Sept 2013 - Jul 2017 / [Jinan University](https://english.jnu.edu.cn/) / Software Engineering
+
+### Work Experience
+- Nov 2016 - Feb 2017 / Shenzhen Binxun Technology Co., Ltd. / Intern
+- Jul 2017 - Feb 2019 / China Merchants Bank Co., Ltd / Full-time
+
+### Interest
+- [OpenJDK](https://openjdk.java.net/) 
+- [kotlin](https://github.com/JetBrains/kotlin)
+- [spring-framework](https://github.com/spring-projects/spring-framework), [my comments](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+commenter%3Algxbslgx+user%3Aspring-projects), [my PRs](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Algxbslgx+user%3Aspring-projects)
+- [spring-boot](https://github.com/spring-projects/spring-boot) 
+
+### Find Me
+- [lgxbslgx@gmail.com](gxbslgx@gmail.com) 
+- [Github](https://github.com/lgxbslgx) 
