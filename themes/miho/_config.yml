@@ -1,5 +1,6 @@
 ﻿# hexo-theme-miho
 # https://github.com/wongminho/hexo-theme-miho
+config.url: http://blog.prankdiary.com/
 
 # Favicon of your site | 网站icon
 favicon: /logo.ico
@@ -40,14 +41,14 @@ menu:
 #    url: //minhow.com    Url, absolute or relative path | 链接，绝对或相对路径
 #    target: true         Whether to jump out | 是否跳出
 social:
-  home:
-    title: liguoxiong
-    url: //lgxbslgx.github.io
-    target: true
-  github:
-    title: Github
-    url: //github.com/lgxbslgx
-    target: true
+#  home:
+#  title: liguoxiong
+#   url: //lgxbslgx.github.io
+#    target: true
+ # github:
+ #   title: Github
+ #   url: //github.com/lgxbslgx
+ #   target: true
  # weibo:
  #   title: Weibo
  #   url: //weibo.com/WongMinHo
