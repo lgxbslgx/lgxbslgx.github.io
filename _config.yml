@@ -80,7 +80,7 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/lgxbslgx/lgxbslgx.github.io.git
-  branch: hexo
+  branch: master
 
 
 
