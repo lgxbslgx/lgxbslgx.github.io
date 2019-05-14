@@ -1,6 +1,6 @@
-<% if (theme.reward.status === 1 || (theme.reward.status === 2 && post.reward)) { %>
+﻿<% if (theme.reward.status === 1 || (theme.reward.status === 2 && post.reward)) { %>
 <div class="page-reward">
-    <a id="rewardBtn" href="javascript:;">赏</a>
+    <a id="rewardBtn" href="javascript:;">Reward</a>
 </div>
 
 <div id="reward" class="post-modal reward-lay">
@@ -21,12 +21,12 @@
         <div class="reward-select">
             <% if(wechat) {%>
             <label class="reward-select-item checked" data-id="wechat" data-wechat="<%- url_for(wechat) %>">
-                <img class="reward-select-item-wechat" src="<%- url_for('images/wechat.png') %>" alt="微信">
+                <img class="reward-select-item-wechat" src="<%- url_for('images/wechat.png') %>" alt="WeChat">
             </label>
             <% } %>
             <% if(alipay) {%>
             <label class="reward-select-item" data-id="alipay" data-alipay="<%- url_for(alipay) %>">
-                <img class="reward-select-item-alipay" src="<%- url_for('images/alipay.png') %>" alt="支付宝">
+                <img class="reward-select-item-alipay" src="<%- url_for('images/alipay.png') %>" alt="Alipay">
             </label>
             <% } %>
         </div>
