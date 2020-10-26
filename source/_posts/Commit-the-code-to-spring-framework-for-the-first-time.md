@@ -49,47 +49,47 @@ issue-22675 报告了一种特殊情况，在这个情况下这个功能无法�
 在使用别名搜索或获取bean的时候，系统要把别名转换成权威的名字（canonical name）,再用这个canonical name去做操作。
 当用到bean的名称的时候，系统都需要把前面的&去掉，并且转换成canonical name，再进行其他操作。这个步骤由AbstractBeanFactory的transformedBeanName方法来完成的。下面举个例子
 	
-	```
-	AbstractBeanFactory.java
-	@Override
-	public boolean containsBean(String name) {
-		String beanName = transformedBeanName(name);
-		if (containsSingleton(beanName) || containsBeanDefinition(beanName)) {
-			return (!BeanFactoryUtils.isFactoryDereference(name) || isFactoryBean(name));
-		}
-		// Not found -> check parent.
-		BeanFactory parentBeanFactory = getParentBeanFactory();
-		return (parentBeanFactory != null && parentBeanFactory.containsBean(originalBeanName(name)));
-	}```
+```java
+AbstractBeanFactory.java
+@Override
+public boolean containsBean(String name) {
+	String beanName = transformedBeanName(name);
+	if (containsSingleton(beanName) || containsBeanDefinition(beanName)) {
+		return (!BeanFactoryUtils.isFactoryDereference(name) || isFactoryBean(name));
+	}
+	// Not found -> check parent.
+	BeanFactory parentBeanFactory = getParentBeanFactory();
+	return (parentBeanFactory != null && parentBeanFactory.containsBean(originalBeanName(name)));
+}```
 
 上面这个方法根据bean的名称，查看bean是否在容器中。它不信任输入，认为输入的名称不一定是canonical name。所以它使用transformedBeanName进行了处理，拿到canonical name，再根据这个canonical name去看有没有包含相应的bean，所以没有出现问题。
 
-	```
-	DefaultListableBeanFactory.java
-	protected boolean isPrimary(String beanName, Object beanInstance) {
-		if (containsBeanDefinition(beanName)) {
-			return getMergedLocalBeanDefinition(beanName).isPrimary();
-		}
-		BeanFactory parent = getParentBeanFactory();
-		return (parent instanceof DefaultListableBeanFactory &&
-				((DefaultListableBeanFactory) parent).isPrimary(beanName, beanInstance));
-	}```
+```java
+DefaultListableBeanFactory.java
+protected boolean isPrimary(String beanName, Object beanInstance) {
+	if (containsBeanDefinition(beanName)) {
+		return getMergedLocalBeanDefinition(beanName).isPrimary();
+	}
+	BeanFactory parent = getParentBeanFactory();
+	return (parent instanceof DefaultListableBeanFactory &&
+			((DefaultListableBeanFactory) parent).isPrimary(beanName, beanInstance));
+}```
 
 而上面这个方法，在使用beanName之前没有做处理。如果输入是带"&"的名称或者是bean别名，根据bean名称找不到对应的bean定义，isPrimary将会为false。同一个类的全部bean定义的isPrimary都为false，Spring不知道选择哪个，就会出现issue描述中的问题（提示bean定义重复，应用启动失败）。
 
 #### 6. 解决方法
 分析到了这里，解决就变得简单了，使用beanName之前，先使用transformedBeanName处理一下。代码如下：
 
-	```
-	protected boolean isPrimary(String beanName, Object beanInstance) {
-		String transformedBeanName = transformedBeanName(beanName);
-		if (containsBeanDefinition(transformedBeanName)) {
-			return getMergedLocalBeanDefinition(transformedBeanName).isPrimary();
-		}
-		BeanFactory parent = getParentBeanFactory();
-		return (parent instanceof DefaultListableBeanFactory &&
-				((DefaultListableBeanFactory) parent).isPrimary(transformedBeanName, beanInstance));
-	}```
+```java
+protected boolean isPrimary(String beanName, Object beanInstance) {
+	String transformedBeanName = transformedBeanName(beanName);
+	if (containsBeanDefinition(transformedBeanName)) {
+		return getMergedLocalBeanDefinition(transformedBeanName).isPrimary();
+	}
+	BeanFactory parent = getParentBeanFactory();
+	return (parent instanceof DefaultListableBeanFactory &&
+			((DefaultListableBeanFactory) parent).isPrimary(transformedBeanName, beanInstance));
+}```
 
 
 但是这就行了吗？当然不行！
