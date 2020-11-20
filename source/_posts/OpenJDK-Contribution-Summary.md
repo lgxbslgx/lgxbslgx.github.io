@@ -1,6 +1,6 @@
 ---
-title: OpenJDK Summary
-date: 2020-11-20 00:05:15
+title: OpenJDK Contribution Summary
+date: 2020-11-20 14:39:15
 tags:
   - OpenJDK
   - Java
