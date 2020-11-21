@@ -14,6 +14,7 @@ Do What U Like.
 - Jul 2017 - Feb 2019 / China Merchants Bank Co., Ltd / Full-time
 
 ### Interest
+- [Linux Kernel](https://www.kernel.org/)
 - [OpenJDK](https://openjdk.java.net/)
 - [LLVM](https://llvm.org/)
 - [kotlin](https://github.com/JetBrains/kotlin)
