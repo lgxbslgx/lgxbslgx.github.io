@@ -2,10 +2,6 @@
 title: About Me
 ---
 
-### Motto
-
-Do What U Like.
-
 ### Education
 - Sept 2013 - Jul 2017 / [Jinan University](https://english.jnu.edu.cn/) / Software Engineering
 
@@ -15,6 +11,7 @@ Do What U Like.
 
 ### Interest
 - [Linux Kernel](https://www.kernel.org/)
+- [glibc](https://www.gnu.org/software/libc)
 - [OpenJDK](https://openjdk.java.net/)
 - [LLVM](https://llvm.org/)
 - [kotlin](https://github.com/JetBrains/kotlin)
@@ -24,3 +21,4 @@ Do What U Like.
 ### Find Me
 - [lgxbslgx@gmail.com](lgxbslgx@gmail.com)
 - [Github](https://github.com/lgxbslgx)
+- [Blog](https://blog.prankdiary.com)
