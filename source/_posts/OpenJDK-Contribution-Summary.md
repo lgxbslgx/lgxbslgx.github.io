@@ -15,3 +15,4 @@ tags:
 #### tool: javac
 - [8254023: A module declaration is not allowed to be a target of an annotation that lacks an @Target meta-annotation](https://github.com/openjdk/jdk/pull/622)
 - [8254557: Compiler crashes with java.lang.AssertionError: isSubtype UNKNOWN](https://github.com/openjdk/jdk/pull/718)
+- [8255968: Confusing error message for inaccessible constructor](https://github.com/openjdk/jdk/pull/1389)
