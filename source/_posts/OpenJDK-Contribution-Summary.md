@@ -9,10 +9,10 @@ tags:
 ### OpenJDK Contribution Summary
 
 #### hotspot
-- [8227106: InitiatingHeapOccupancyPercent is G1-specific but defined in shared](https://github.com/openjdk/jdk/pull/1217)
-- [8250888: nsk/jvmti/scenarios/general_functions/GF08/gf08t001/TestDriver.java fails](https://github.com/openjdk/jdk/pull/1319)
+- [JDK-8227106](https://bugs.openjdk.java.net/browse/JDK-8227106) [PATCH](https://github.com/openjdk/jdk/pull/1217)  InitiatingHeapOccupancyPercent is G1-specific but defined in shared
+- [JDK-8250888](https://bugs.openjdk.java.net/browse/JDK-8250888) [PATCH](https://github.com/openjdk/jdk/pull/1319)  nsk/jvmti/scenarios/general_functions/GF08/gf08t001/TestDriver.java fails
 
 #### tool: javac
-- [8254023: A module declaration is not allowed to be a target of an annotation that lacks an @Target meta-annotation](https://github.com/openjdk/jdk/pull/622)
-- [8254557: Compiler crashes with java.lang.AssertionError: isSubtype UNKNOWN](https://github.com/openjdk/jdk/pull/718)
-- [8255968: Confusing error message for inaccessible constructor](https://github.com/openjdk/jdk/pull/1389)
+- [JDK-8254023](https://bugs.openjdk.java.net/browse/JDK-8254023) [PATCH](https://github.com/openjdk/jdk/pull/622)  A module declaration is not allowed to be a target of an annotation that lacks an @Target meta-annotation
+- [JDK-8254557](https://bugs.openjdk.java.net/browse/JDK-8254557) [PATCH](https://github.com/openjdk/jdk/pull/718)  Compiler crashes with java.lang.AssertionError: isSubtype UNKNOWN
+- [JDK-8255968](https://bugs.openjdk.java.net/browse/JDK-8255968) [PATCH](https://github.com/openjdk/jdk/pull/1389)  Confusing error message for inaccessible constructor
