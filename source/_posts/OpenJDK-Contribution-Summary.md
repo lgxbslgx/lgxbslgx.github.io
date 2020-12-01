@@ -16,3 +16,4 @@ tags:
 - [JDK-8254023](https://bugs.openjdk.java.net/browse/JDK-8254023) [PATCH](https://github.com/openjdk/jdk/pull/622)  A module declaration is not allowed to be a target of an annotation that lacks an @Target meta-annotation
 - [JDK-8254557](https://bugs.openjdk.java.net/browse/JDK-8254557) [PATCH](https://github.com/openjdk/jdk/pull/718)  Compiler crashes with java.lang.AssertionError: isSubtype UNKNOWN
 - [JDK-8255968](https://bugs.openjdk.java.net/browse/JDK-8255968) [PATCH](https://github.com/openjdk/jdk/pull/1389)  Confusing error message for inaccessible constructor
+- [JDK-8257037](https://bugs.openjdk.java.net/browse/JDK-8257037) [PATCH](https://github.com/openjdk/jdk/pull/1490)  No javac warning when calling deprecated constructor with diamond
