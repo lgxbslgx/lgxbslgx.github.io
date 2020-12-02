@@ -15,10 +15,10 @@ title: About Me
 - [OpenJDK](https://openjdk.java.net/)
 - [LLVM](https://llvm.org/)
 - [kotlin](https://github.com/JetBrains/kotlin)
-- [spring-framework](https://github.com/spring-projects/spring-framework), [My Comments](https://github.com/spring-projects/spring-framework/issues?utf8=%E2%9C%93&q=is%3Aissue+commenter%3Algxbslgx), [My PRs](https://github.com/spring-projects/spring-framework/pulls?q=is%3Apr+author%3Algxbslgx)
+- [spring-framework](https://github.com/spring-projects/spring-framework)
 - [spring-boot](https://github.com/spring-projects/spring-boot)
 
 ### Find Me
 - [lgxbslgx@gmail.com](lgxbslgx@gmail.com)
-- [Github](https://github.com/lgxbslgx)
+- [GitHub](https://github.com/lgxbslgx)
 - [Blog](https://blog.prankdiary.com)
