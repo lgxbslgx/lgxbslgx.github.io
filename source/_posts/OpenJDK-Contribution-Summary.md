@@ -18,4 +18,5 @@ tags:
 - [JDK-8255968](https://bugs.openjdk.java.net/browse/JDK-8255968) [PATCH](https://github.com/openjdk/jdk/pull/1389)  Confusing error message for inaccessible constructor
 - [JDK-8257037](https://bugs.openjdk.java.net/browse/JDK-8257037) [PATCH](https://github.com/openjdk/jdk/pull/1490)  No javac warning when calling deprecated constructor with diamond
 - [JDK-8245956](https://bugs.openjdk.java.net/browse/JDK-8245956) [PATCH](https://github.com/openjdk/jdk/pull/1553)  JavaCompiler still uses files API instead of Path API in a specific case
+- [JDK-8231622](https://bugs.openjdk.java.net/browse/JDK-8231622) [PATCH](https://github.com/openjdk/jdk/pull/1626)  SuppressWarning("serial") ignored on field serialVersionUID
 
