@@ -23,4 +23,4 @@ tags:
 - [JDK-8230623](https://bugs.openjdk.java.net/browse/JDK-8230623) [PATCH](https://github.com/openjdk/jdk/pull/1758)  Extract command-line help for -Xlint sub-options to new --help-lint
 - [JDK-8258525](https://bugs.openjdk.java.net/browse/JDK-8258525) [PATCH](https://github.com/openjdk/jdk/pull/1732)  Some existing tests should use /nodynamiccopyright/ instead of the standard header
 - [JDK-8258662](https://bugs.openjdk.java.net/browse/JDK-8258662) [PATCH](https://github.com/openjdk/jdk/pull/1849)  JDK 17ea: Crash compiling instanceof check involving sealed interface
-
+- [JDK-8255729](https://bugs.openjdk.java.net/browse/JDK-8255729) [PATCH](https://github.com/openjdk/jdk/pull/1854)  com.sun.tools.javac.processing.JavacFiler.FilerOutputStream is inefficient
