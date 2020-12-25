@@ -23,6 +23,8 @@ tags:
 - [JDK-8225003](https://bugs.openjdk.java.net/browse/JDK-8225003) [PATCH](https://github.com/openjdk/jdk/pull/1864)  NPE in Attr.attribIdentAsEnumType
 - [JDK-8239596](https://bugs.openjdk.java.net/browse/JDK-8239596) [PATCH](https://github.com/openjdk/jdk/pull/1881)  PARAMETER annotation on receiver type does not cause error
 - [JDK-8226216](https://bugs.openjdk.java.net/browse/JDK-8226216) [PATCH](https://github.com/openjdk/jdk/pull/1890)  parameter modifiers are not visible to javac plugins across compilation boundaries
+- [JDK-8216400](https://bugs.openjdk.java.net/browse/JDK-8216400) [PATCH](https://github.com/openjdk/jdk/pull/1895)  improve handling of IOExceptions in JavaCompiler.close()
+- [JDK-8198317](https://bugs.openjdk.java.net/browse/JDK-8198317) [PATCH](https://github.com/openjdk/jdk/pull/1896)  Enhance JavacTool.getTask for flexibility
 
 #### hotspot
 - [JDK-8227106](https://bugs.openjdk.java.net/browse/JDK-8227106) [PATCH](https://github.com/openjdk/jdk/pull/1217)  InitiatingHeapOccupancyPercent is G1-specific but defined in shared
