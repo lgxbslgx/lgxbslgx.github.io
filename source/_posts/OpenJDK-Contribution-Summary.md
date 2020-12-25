@@ -1,12 +1,19 @@
 ---
-title: OpenJDK Contribution Summary
+title: OpenJDK Main-line Contribution Summary
 date: 2020-11-20 14:39:15
 tags:
   - OpenJDK
   - Java
+  - Javac
+  - hotspot
+  - JVM
 ---
 
-### OpenJDK Contribution Summary
+#### Related description and Links
+The JDK Project is the JDK main-line development of OpenJDK.
+- [Introduction](http://openjdk.java.net/projects/jdk)
+- [Code Base](https://github.com/openjdk/jdk)
+
 
 #### tool: javac
 - [JDK-8254023](https://bugs.openjdk.java.net/browse/JDK-8254023) [PATCH](https://github.com/openjdk/jdk/pull/622)  A module declaration is not allowed to be a target of an annotation that lacks an @Target meta-annotation
@@ -25,6 +32,7 @@ tags:
 - [JDK-8226216](https://bugs.openjdk.java.net/browse/JDK-8226216) [PATCH](https://github.com/openjdk/jdk/pull/1890)  parameter modifiers are not visible to javac plugins across compilation boundaries
 - [JDK-8216400](https://bugs.openjdk.java.net/browse/JDK-8216400) [PATCH](https://github.com/openjdk/jdk/pull/1895)  improve handling of IOExceptions in JavaCompiler.close()
 - [JDK-8198317](https://bugs.openjdk.java.net/browse/JDK-8198317) [PATCH](https://github.com/openjdk/jdk/pull/1896)  Enhance JavacTool.getTask for flexibility
+
 
 #### hotspot
 - [JDK-8227106](https://bugs.openjdk.java.net/browse/JDK-8227106) [PATCH](https://github.com/openjdk/jdk/pull/1217)  InitiatingHeapOccupancyPercent is G1-specific but defined in shared
