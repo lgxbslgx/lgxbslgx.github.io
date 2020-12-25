@@ -24,3 +24,6 @@ tags:
 - [JDK-8258525](https://bugs.openjdk.java.net/browse/JDK-8258525) [PATCH](https://github.com/openjdk/jdk/pull/1732)  Some existing tests should use /nodynamiccopyright/ instead of the standard header
 - [JDK-8258662](https://bugs.openjdk.java.net/browse/JDK-8258662) [PATCH](https://github.com/openjdk/jdk/pull/1849)  JDK 17ea: Crash compiling instanceof check involving sealed interface
 - [JDK-8255729](https://bugs.openjdk.java.net/browse/JDK-8255729) [PATCH](https://github.com/openjdk/jdk/pull/1854)  com.sun.tools.javac.processing.JavacFiler.FilerOutputStream is inefficient
+- [JDK-8225003](https://bugs.openjdk.java.net/browse/JDK-8225003) [PATCH](https://github.com/openjdk/jdk/pull/1864)  NPE in Attr.attribIdentAsEnumType
+- [JDK-8239596](https://bugs.openjdk.java.net/browse/JDK-8239596) [PATCH](https://github.com/openjdk/jdk/pull/1881)  PARAMETER annotation on receiver type does not cause error
+- [JDK-8226216](https://bugs.openjdk.java.net/browse/JDK-8226216) [PATCH](https://github.com/openjdk/jdk/pull/1890)  parameter modifiers are not visible to javac plugins across compilation boundaries
