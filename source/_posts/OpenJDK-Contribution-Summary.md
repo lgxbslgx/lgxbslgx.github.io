@@ -32,6 +32,8 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8226216](https://bugs.openjdk.java.net/browse/JDK-8226216) [PATCH](https://github.com/openjdk/jdk/pull/1890)  parameter modifiers are not visible to javac plugins across compilation boundaries
 - [JDK-8216400](https://bugs.openjdk.java.net/browse/JDK-8216400) [PATCH](https://github.com/openjdk/jdk/pull/1895)  improve handling of IOExceptions in JavaCompiler.close()
 - [JDK-8198317](https://bugs.openjdk.java.net/browse/JDK-8198317) [PATCH](https://github.com/openjdk/jdk/pull/1896)  Enhance JavacTool.getTask for flexibility
+- [JDK-8057543](https://bugs.openjdk.java.net/browse/JDK-8057543) [PATCH](https://github.com/openjdk/jdk/pull/1898)  Replace javac's Filter with Predicate (and lambdas)
+- [JDK-8255757](https://bugs.openjdk.java.net/browse/JDK-8255757) [PATCH](https://github.com/openjdk/jdk/pull/1912)  Javac emits duplicate pool entries on array::clone
 
 
 #### hotspot
