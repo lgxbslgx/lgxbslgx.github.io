@@ -35,6 +35,7 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8057543](https://bugs.openjdk.java.net/browse/JDK-8057543) [PATCH](https://github.com/openjdk/jdk/pull/1898)  Replace javac's Filter with Predicate (and lambdas)
 - [JDK-8255757](https://bugs.openjdk.java.net/browse/JDK-8255757) [PATCH](https://github.com/openjdk/jdk/pull/1912)  Javac emits duplicate pool entries on array::clone
 - [JDK-8259025](https://bugs.openjdk.java.net/browse/JDK-8259025) [PATCH](https://github.com/openjdk/jdk/pull/1917)  Record compact constructor using Objects.requireNonNull
+- [JDK-8150303](https://bugs.openjdk.java.net/browse/JDK-8150303) [PATCH](https://github.com/openjdk/jdk/pull/1959)  Rewrite test/tools/javac/Paths/Diagnostics.sh
 
 
 #### hotspot
