@@ -36,6 +36,8 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8255757](https://bugs.openjdk.java.net/browse/JDK-8255757) [PATCH](https://github.com/openjdk/jdk/pull/1912)  Javac emits duplicate pool entries on array::clone
 - [JDK-8259025](https://bugs.openjdk.java.net/browse/JDK-8259025) [PATCH](https://github.com/openjdk/jdk/pull/1917)  Record compact constructor using Objects.requireNonNull
 - [JDK-8150303](https://bugs.openjdk.java.net/browse/JDK-8150303) [PATCH](https://github.com/openjdk/jdk/pull/1959)  Rewrite test/tools/javac/Paths/Diagnostics.sh
+- [JDK-8203925](https://bugs.openjdk.java.net/browse/JDK-8203925) [PATCH](https://github.com/openjdk/jdk/pull/1998)  tools/javac/importscope/T8193717.java ran out of java heap
+- [JDK-8231179](https://bugs.openjdk.java.net/browse/JDK-8231179) [PATCH](https://github.com/openjdk/jdk/pull/2004)  Investigate why tools/javac/options/BCPOrSystemNotSpecified.java fails on Window
 
 
 #### hotspot
