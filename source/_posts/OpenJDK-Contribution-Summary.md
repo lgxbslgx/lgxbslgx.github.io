@@ -40,6 +40,7 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8231179](https://bugs.openjdk.java.net/browse/JDK-8231179) [PATCH](https://github.com/openjdk/jdk/pull/2004)  Investigate why tools/javac/options/BCPOrSystemNotSpecified.java fails on Window
 - [JDK-8259359](https://bugs.openjdk.java.net/browse/JDK-8259359) [PATCH](https://github.com/openjdk/jdk/pull/2021)  javac does not attribute unexpected super constructor invocation qualifier, and may crash
 - [JDK-8236490](https://bugs.openjdk.java.net/browse/JDK-8236490) [PATCH](https://github.com/openjdk/jdk/pull/2060)  Compiler bug relating to @NonNull annotation
+- [JDK-8232765](https://bugs.openjdk.java.net/browse/JDK-8232765) [PATCH](https://github.com/openjdk/jdk/pull/2099)  NullPointerException at Types.eraseNotNeeded() when compiling a class
 
 
 #### hotspot
