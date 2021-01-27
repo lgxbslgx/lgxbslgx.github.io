@@ -3,21 +3,23 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>Archives: 2019 | Guoxiong Li</title>
+  <title>OpenJDK开发指南 | Guoxiong Li</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="lgx,liguoxiong, lgsbslgx, liguoxiong's Blog">
   
-  <meta name="description" content="Guoxiong Li">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guoxiong Li">
-<meta property="og:url" content="http://lgxbslgx.github.io/archives/2019/index.html">
+  <meta name="description" content="相关信息该系列开发指南发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: OpenJDK开发指南 具体文章OpenJDK开发指南—-前言">
+<meta name="keywords" content="OpenJDK,Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenJDK开发指南">
+<meta property="og:url" content="http://lgxbslgx.github.io/2021/01/27/OpenJDK-developer-guide/index.html">
 <meta property="og:site_name" content="Guoxiong Li">
-<meta property="og:description" content="Guoxiong Li">
+<meta property="og:description" content="相关信息该系列开发指南发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: OpenJDK开发指南 具体文章OpenJDK开发指南—-前言">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2021-01-27T06:22:40.278Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Guoxiong Li">
-<meta name="twitter:description" content="Guoxiong Li">
+<meta name="twitter:title" content="OpenJDK开发指南">
+<meta name="twitter:description" content="相关信息该系列开发指南发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: OpenJDK开发指南 具体文章OpenJDK开发指南—-前言">
   
   
     <link rel="icon" href="/logo.ico">
@@ -92,55 +94,165 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap">
-  
-  
+        <section id="main" class="body-wrap"><article id="post-OpenJDK-developer-guide" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/14/Commit-the-code-to-spring-framework-for-the-first-time/" class="archive-article-date">
-  <time datetime="2019-05-14T15:39:52.000Z" itemprop="datePublished">05-14</time>
-</a>
-      
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/14/Commit-the-code-to-spring-framework-for-the-first-time/"  target="_blank"  >spring-framework的issue-22675解决过程</a>
+    <h1 class="post-title" itemprop="name">
+      OpenJDK开发指南
     </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2021-01-27
+        </li>
+      </ul>
+    </div>
   
 
-    </header>
+          
+      </header>
+    
       
-        <div class="archive-post-footer">
+    <div class="article-entry post-content" itemprop="articleBody">
+            
+            <h3 id="相关信息"><a href="#相关信息" class="headerlink" title="相关信息"></a>相关信息</h3><p>该系列开发指南发表在知乎专栏。这里也留一个链接，方便读者。<br>专栏地址: <a href="https://www.zhihu.com/column/c_1336779862313566208" target="_blank" rel="noopener">OpenJDK开发指南</a></p>
+<h3 id="具体文章"><a href="#具体文章" class="headerlink" title="具体文章"></a>具体文章</h3><p><a href="https://zhuanlan.zhihu.com/p/347268725" target="_blank" rel="noopener">OpenJDK开发指南—-前言</a></p>
+
+            <div class="post-copyright">
+
+</div>
+
+    </div>
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">Reward</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        Reward
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_pay.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_pay.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="WeChat">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="Alipay">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://lgxbslgx.github.io/2021/01/27/OpenJDK-developer-guide/&title=《OpenJDK开发指南》 — Guoxiong Li&pic=http://lgxbslgx.github.ioimages/logo.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lgxbslgx.github.io/2021/01/27/OpenJDK-developer-guide/&title=《OpenJDK开发指南》 — Guoxiong Li&source=Guoxiong Li" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://lgxbslgx.github.io/2021/01/27/OpenJDK-developer-guide/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《OpenJDK开发指南》 — Guoxiong Li&url=http://lgxbslgx.github.io/2021/01/27/OpenJDK-developer-guide/&via=http://lgxbslgx.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://lgxbslgx.github.io/2021/01/27/OpenJDK-developer-guide/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://lgxbslgx.github.io/2021/01/27/OpenJDK-developer-guide/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
             
   <li class="article-footer-tags">
     <i class="fa fa-tags"></i>
       
-    <a href="/tags/Java/" class="color5">Java</a>
+    <a href="/tags/OpenJDK/" class="color3">OpenJDK</a>
       
-    <a href="/tags/spring-framework/" class="color2">spring-framework</a>
+    <a href="/tags/Java/" class="color5">Java</a>
       
   </li>
 
-        </div>
-      
+        </ul>
+        
+    </footer>
   </div>
 </article>
 
-  
-  
-    </div></section>
-  
 
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#相关信息"><span class="post-toc-text">相关信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#具体文章"><span class="post-toc-text">具体文章</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/21/Java-compiler-book-review/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">《深入解析Java编译器》书评</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
 </section>
         
       </div>
