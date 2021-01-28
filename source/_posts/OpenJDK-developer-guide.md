@@ -12,4 +12,5 @@ tags:
 
 ### 具体文章
 [OpenJDK开发指南----前言](https://zhuanlan.zhihu.com/p/347268725)
+[OpenJDK开发指南----社区角色](https://zhuanlan.zhihu.com/p/347754486)
 
