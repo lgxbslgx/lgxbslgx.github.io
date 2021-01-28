@@ -24,4 +24,5 @@ tags:
 - [《深入解析Java编译器》第六章](https://zhuanlan.zhihu.com/p/346445373)
 - [《深入解析Java编译器》第七章](https://zhuanlan.zhihu.com/p/346656643)
 - [《深入解析Java编译器》第八章](https://zhuanlan.zhihu.com/p/346865148)
+- [《深入解析Java编译器》第九章](https://zhuanlan.zhihu.com/p/346977803)
 
