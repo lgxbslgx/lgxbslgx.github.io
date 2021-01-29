@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>OpenJDK Main-line Contribution Summary | Guoxiong Li</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="lgx,liguoxiong, lgsbslgx, liguoxiong's Blog">
+  
+  <meta name="description" content="Related description and LinksThe JDK Project is the JDK main-line development of OpenJDK.  Introduction Code Base  tool: javac JDK-8254023 PATCH  A module declaration is not allowed to be a target of">
+<meta name="keywords" content="Java,OpenJDK,Javac,hotspot,JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenJDK Main-line Contribution Summary">
+<meta property="og:url" content="http://lgxbslgx.github.io/2020/11/20/OpenJDK-Contribution-Summary/index.html">
+<meta property="og:site_name" content="Guoxiong Li">
+<meta property="og:description" content="Related description and LinksThe JDK Project is the JDK main-line development of OpenJDK.  Introduction Code Base  tool: javac JDK-8254023 PATCH  A module declaration is not allowed to be a target of">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2021-01-29T11:25:04.707Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OpenJDK Main-line Contribution Summary">
+<meta name="twitter:description" content="Related description and LinksThe JDK Project is the JDK main-line development of OpenJDK.  Introduction Code Base  tool: javac JDK-8254023 PATCH  A module declaration is not allowed to be a target of">
+  
+  
+    <link rel="icon" href="/logo.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title"></span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        Do What U Like
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-OpenJDK-Contribution-Summary" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      OpenJDK Main-line Contribution Summary
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2020-11-20
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+      
+    <div class="article-entry post-content" itemprop="articleBody">
+            
+            <h4 id="Related-description-and-Links"><a href="#Related-description-and-Links" class="headerlink" title="Related description and Links"></a>Related description and Links</h4><p>The JDK Project is the JDK main-line development of OpenJDK.</p>
+<ul>
+<li><a href="http://openjdk.java.net/projects/jdk" target="_blank" rel="noopener">Introduction</a></li>
+<li><a href="https://github.com/openjdk/jdk" target="_blank" rel="noopener">Code Base</a></li>
+</ul>
+<h4 id="tool-javac"><a href="#tool-javac" class="headerlink" title="tool: javac"></a>tool: javac</h4><ul>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8254023" target="_blank" rel="noopener">JDK-8254023</a> <a href="https://github.com/openjdk/jdk/pull/622" target="_blank" rel="noopener">PATCH</a>  A module declaration is not allowed to be a target of an annotation that lacks an @Target meta-annotation</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8254557" target="_blank" rel="noopener">JDK-8254557</a> <a href="https://github.com/openjdk/jdk/pull/718" target="_blank" rel="noopener">PATCH</a>  Compiler crashes with java.lang.AssertionError: isSubtype UNKNOWN</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8255968" target="_blank" rel="noopener">JDK-8255968</a> <a href="https://github.com/openjdk/jdk/pull/1389" target="_blank" rel="noopener">PATCH</a>  Confusing error message for inaccessible constructor</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8257037" target="_blank" rel="noopener">JDK-8257037</a> <a href="https://github.com/openjdk/jdk/pull/1490" target="_blank" rel="noopener">PATCH</a>  No javac warning when calling deprecated constructor with diamond</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8245956" target="_blank" rel="noopener">JDK-8245956</a> <a href="https://github.com/openjdk/jdk/pull/1553" target="_blank" rel="noopener">PATCH</a>  JavaCompiler still uses File API instead of Path API in a specific case</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8231622" target="_blank" rel="noopener">JDK-8231622</a> <a href="https://github.com/openjdk/jdk/pull/1626" target="_blank" rel="noopener">PATCH</a>  SuppressWarning(“serial”) ignored on field serialVersionUID</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8257740" target="_blank" rel="noopener">JDK-8257740</a> <a href="https://github.com/openjdk/jdk/pull/1648" target="_blank" rel="noopener">PATCH</a>  Compiler crash when compiling type annotation on multicatch inside lambda</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8230623" target="_blank" rel="noopener">JDK-8230623</a> <a href="https://github.com/openjdk/jdk/pull/1758" target="_blank" rel="noopener">PATCH</a>  Extract command-line help for -Xlint sub-options to new –help-lint</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8258525" target="_blank" rel="noopener">JDK-8258525</a> <a href="https://github.com/openjdk/jdk/pull/1732" target="_blank" rel="noopener">PATCH</a>  Some existing tests should use /nodynamiccopyright/ instead of the standard header</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8258662" target="_blank" rel="noopener">JDK-8258662</a> <a href="https://github.com/openjdk/jdk/pull/1849" target="_blank" rel="noopener">PATCH</a>  JDK 17ea: Crash compiling instanceof check involving sealed interface</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8255729" target="_blank" rel="noopener">JDK-8255729</a> <a href="https://github.com/openjdk/jdk/pull/1854" target="_blank" rel="noopener">PATCH</a>  com.sun.tools.javac.processing.JavacFiler.FilerOutputStream is inefficient</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8225003" target="_blank" rel="noopener">JDK-8225003</a> <a href="https://github.com/openjdk/jdk/pull/1864" target="_blank" rel="noopener">PATCH</a>  NPE in Attr.attribIdentAsEnumType</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8239596" target="_blank" rel="noopener">JDK-8239596</a> <a href="https://github.com/openjdk/jdk/pull/1881" target="_blank" rel="noopener">PATCH</a>  PARAMETER annotation on receiver type does not cause error</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8226216" target="_blank" rel="noopener">JDK-8226216</a> <a href="https://github.com/openjdk/jdk/pull/1890" target="_blank" rel="noopener">PATCH</a>  parameter modifiers are not visible to javac plugins across compilation boundaries</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8216400" target="_blank" rel="noopener">JDK-8216400</a> <a href="https://github.com/openjdk/jdk/pull/1895" target="_blank" rel="noopener">PATCH</a>  improve handling of IOExceptions in JavaCompiler.close()</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8198317" target="_blank" rel="noopener">JDK-8198317</a> <a href="https://github.com/openjdk/jdk/pull/1896" target="_blank" rel="noopener">PATCH</a>  Enhance JavacTool.getTask for flexibility</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8057543" target="_blank" rel="noopener">JDK-8057543</a> <a href="https://github.com/openjdk/jdk/pull/1898" target="_blank" rel="noopener">PATCH</a>  Replace javac’s Filter with Predicate (and lambdas)</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8255757" target="_blank" rel="noopener">JDK-8255757</a> <a href="https://github.com/openjdk/jdk/pull/1912" target="_blank" rel="noopener">PATCH</a>  Javac emits duplicate pool entries on array::clone</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8259025" target="_blank" rel="noopener">JDK-8259025</a> <a href="https://github.com/openjdk/jdk/pull/1917" target="_blank" rel="noopener">PATCH</a>  Record compact constructor using Objects.requireNonNull</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8150303" target="_blank" rel="noopener">JDK-8150303</a> <a href="https://github.com/openjdk/jdk/pull/1959" target="_blank" rel="noopener">PATCH</a>  Rewrite test/tools/javac/Paths/Diagnostics.sh</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8203925" target="_blank" rel="noopener">JDK-8203925</a> <a href="https://github.com/openjdk/jdk/pull/1998" target="_blank" rel="noopener">PATCH</a>  tools/javac/importscope/T8193717.java ran out of java heap</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8231179" target="_blank" rel="noopener">JDK-8231179</a> <a href="https://github.com/openjdk/jdk/pull/2004" target="_blank" rel="noopener">PATCH</a>  Investigate why tools/javac/options/BCPOrSystemNotSpecified.java fails on Window</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8259359" target="_blank" rel="noopener">JDK-8259359</a> <a href="https://github.com/openjdk/jdk/pull/2021" target="_blank" rel="noopener">PATCH</a>  javac does not attribute unexpected super constructor invocation qualifier, and may crash</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8236490" target="_blank" rel="noopener">JDK-8236490</a> <a href="https://github.com/openjdk/jdk/pull/2060" target="_blank" rel="noopener">PATCH</a>  Compiler bug relating to @NonNull annotation</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8232765" target="_blank" rel="noopener">JDK-8232765</a> <a href="https://github.com/openjdk/jdk/pull/2099" target="_blank" rel="noopener">PATCH</a>  NullPointerException at Types.eraseNotNeeded() when compiling a class</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8213766" target="_blank" rel="noopener">JDK-8213766</a> <a href="https://github.com/openjdk/jdk/pull/2118" target="_blank" rel="noopener">PATCH</a>  Assertion error in TypeAnnotations$TypeAnnotationPositions.resolveFrame</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8260053" target="_blank" rel="noopener">JDK-8260053</a> <a href="https://github.com/openjdk/jdk/pull/2169" target="_blank" rel="noopener">PATCH</a>  Optimize Tokens’ use of Names</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8260566" target="_blank" rel="noopener">JDK-8260566</a> <a href="https://github.com/openjdk/jdk/pull/2311" target="_blank" rel="noopener">PATCH</a>  Pattern type X is a subtype of expression type Y message is incorrect</li>
+</ul>
+<h4 id="hotspot"><a href="#hotspot" class="headerlink" title="hotspot"></a>hotspot</h4><ul>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8227106" target="_blank" rel="noopener">JDK-8227106</a> <a href="https://github.com/openjdk/jdk/pull/1217" target="_blank" rel="noopener">PATCH</a>  InitiatingHeapOccupancyPercent is G1-specific but defined in shared</li>
+<li><a href="https://bugs.openjdk.java.net/browse/JDK-8250888" target="_blank" rel="noopener">JDK-8250888</a> <a href="https://github.com/openjdk/jdk/pull/1319" target="_blank" rel="noopener">PATCH</a>  nsk/jvmti/scenarios/general_functions/GF08/gf08t001/TestDriver.java fails</li>
+</ul>
+
+            <div class="post-copyright">
+
+</div>
+
+    </div>
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">Reward</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        Reward
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_pay.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_pay.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="WeChat">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="Alipay">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://lgxbslgx.github.io/2020/11/20/OpenJDK-Contribution-Summary/&title=《OpenJDK Main-line Contribution Summary》 — Guoxiong Li&pic=http://lgxbslgx.github.ioimages/logo.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lgxbslgx.github.io/2020/11/20/OpenJDK-Contribution-Summary/&title=《OpenJDK Main-line Contribution Summary》 — Guoxiong Li&source=Guoxiong Li" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://lgxbslgx.github.io/2020/11/20/OpenJDK-Contribution-Summary/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《OpenJDK Main-line Contribution Summary》 — Guoxiong Li&url=http://lgxbslgx.github.io/2020/11/20/OpenJDK-Contribution-Summary/&via=http://lgxbslgx.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://lgxbslgx.github.io/2020/11/20/OpenJDK-Contribution-Summary/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://lgxbslgx.github.io/2020/11/20/OpenJDK-Contribution-Summary/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/Java/" class="color5">Java</a>
+      
+    <a href="/tags/OpenJDK/" class="color3">OpenJDK</a>
+      
+    <a href="/tags/Javac/" class="color1">Javac</a>
+      
+    <a href="/tags/hotspot/" class="color3">hotspot</a>
+      
+    <a href="/tags/JVM/" class="color4">JVM</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Related-description-and-Links"><span class="post-toc-text">Related description and Links</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#tool-javac"><span class="post-toc-text">tool: javac</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#hotspot"><span class="post-toc-text">hotspot</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2021/01/21/Java-compiler-book-review/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          《深入解析Java编译器》书评
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2020/10/26/OpenJDK-8254557/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">OpenJDK的JDK-8254557解决过程</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2021 Guoxiong Li<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://lgxbslgx.github.io",
+      animate: false,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/Compiler/" style="font-size: 10px;">Compiler</a> <a href="/tags/JVM/" style="font-size: 10px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Javac/" style="font-size: 13.33px;">Javac</a> <a href="/tags/OpenJDK/" style="font-size: 16.67px;">OpenJDK</a> <a href="/tags/hotspot/" style="font-size: 10px;">hotspot</a> <a href="/tags/spring-framework/" style="font-size: 10px;">spring-framework</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/Compiler/" style="font-size: 10px;">Compiler</a> <a href="/tags/JVM/" style="font-size: 10px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Javac/" style="font-size: 13.33px;">Javac</a> <a href="/tags/OpenJDK/" style="font-size: 16.67px;">OpenJDK</a> <a href="/tags/hotspot/" style="font-size: 10px;">hotspot</a> <a href="/tags/spring-framework/" style="font-size: 10px;">spring-framework</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
