@@ -41,7 +41,9 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8259359](https://bugs.openjdk.java.net/browse/JDK-8259359) [PATCH](https://github.com/openjdk/jdk/pull/2021)  javac does not attribute unexpected super constructor invocation qualifier, and may crash
 - [JDK-8236490](https://bugs.openjdk.java.net/browse/JDK-8236490) [PATCH](https://github.com/openjdk/jdk/pull/2060)  Compiler bug relating to @NonNull annotation
 - [JDK-8232765](https://bugs.openjdk.java.net/browse/JDK-8232765) [PATCH](https://github.com/openjdk/jdk/pull/2099)  NullPointerException at Types.eraseNotNeeded() when compiling a class
+- [JDK-8213766](https://bugs.openjdk.java.net/browse/JDK-8213766) [PATCH](https://github.com/openjdk/jdk/pull/2118)  Assertion error in TypeAnnotations$TypeAnnotationPositions.resolveFrame
 - [JDK-8260053](https://bugs.openjdk.java.net/browse/JDK-8260053) [PATCH](https://github.com/openjdk/jdk/pull/2169)  Optimize Tokens' use of Names
+- [JDK-8260566](https://bugs.openjdk.java.net/browse/JDK-8260566) [PATCH](https://github.com/openjdk/jdk/pull/2311)  Pattern type X is a subtype of expression type Y message is incorrect
 
 
 #### hotspot
