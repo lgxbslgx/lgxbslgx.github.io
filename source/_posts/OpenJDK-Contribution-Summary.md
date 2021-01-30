@@ -44,6 +44,7 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8213766](https://bugs.openjdk.java.net/browse/JDK-8213766) [PATCH](https://github.com/openjdk/jdk/pull/2118)  Assertion error in TypeAnnotations$TypeAnnotationPositions.resolveFrame
 - [JDK-8260053](https://bugs.openjdk.java.net/browse/JDK-8260053) [PATCH](https://github.com/openjdk/jdk/pull/2169)  Optimize Tokens' use of Names
 - [JDK-8260566](https://bugs.openjdk.java.net/browse/JDK-8260566) [PATCH](https://github.com/openjdk/jdk/pull/2311)  Pattern type X is a subtype of expression type Y message is incorrect
+- [JDK-8200145](https://bugs.openjdk.java.net/browse/JDK-8200145) [PATCH](https://github.com/openjdk/jdk/pull/2324)  Conditional expression mistakenly treated as standalone
 
 
 #### hotspot
