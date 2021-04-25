@@ -47,6 +47,9 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8200145](https://bugs.openjdk.java.net/browse/JDK-8200145) [PATCH](https://github.com/openjdk/jdk/pull/2324)  Conditional expression mistakenly treated as standalone
 - [JDK-8264696](https://bugs.openjdk.java.net/browse/JDK-8264696) [PATCH](https://github.com/openjdk/jdk/pull/3374)  Multi-catch clause causes compiler exception because it uses the package-private supertype
 - [JDK-8263642](https://bugs.openjdk.java.net/browse/JDK-8263642) [PATCH](https://github.com/openjdk/jdk/pull/3399)  javac emits duplicate checkcast for first bound of intersection type in cast
+- [JDK-8265899](https://bugs.openjdk.java.net/browse/JDK-8265899) [PATCH](https://github.com/openjdk/jdk/pull/3673)  Use pattern matching for instanceof at module jdk.compiler(part 1)
+- [JDK-8265900](https://bugs.openjdk.java.net/browse/JDK-8265900) [PATCH](https://github.com/openjdk/jdk/pull/3674)  Use pattern matching for instanceof at module jdk.compiler(part 2)
+- [JDK-8265901](https://bugs.openjdk.java.net/browse/JDK-8265901) [PATCH](https://github.com/openjdk/jdk/pull/3675)  Use pattern matching for instanceof at module jdk.compiler(part 3)
 
 
 #### hotspot
