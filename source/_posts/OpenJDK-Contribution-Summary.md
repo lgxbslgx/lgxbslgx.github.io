@@ -50,6 +50,8 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8265899](https://bugs.openjdk.java.net/browse/JDK-8265899) [PATCH](https://github.com/openjdk/jdk/pull/3673)  Use pattern matching for instanceof at module jdk.compiler(part 1)
 - [JDK-8265900](https://bugs.openjdk.java.net/browse/JDK-8265900) [PATCH](https://github.com/openjdk/jdk/pull/3674)  Use pattern matching for instanceof at module jdk.compiler(part 2)
 - [JDK-8265901](https://bugs.openjdk.java.net/browse/JDK-8265901) [PATCH](https://github.com/openjdk/jdk/pull/3675)  Use pattern matching for instanceof at module jdk.compiler(part 3)
+- [JDK-8266625](https://bugs.openjdk.java.net/browse/JDK-8266625) [PATCH](https://github.com/openjdk/jdk/pull/3899)  The method DiagnosticSource#findLine returns wrong results when using the boundary values
+- [JDK-8266675](https://bugs.openjdk.java.net/browse/JDK-8266675) [PATCH](https://github.com/openjdk/jdk/pull/3912)  Optimize IntHashTable for encapsulation and ease of use
 
 
 #### hotspot
