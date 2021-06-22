@@ -54,9 +54,19 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8266675](https://bugs.openjdk.java.net/browse/JDK-8266675) [PATCH](https://github.com/openjdk/jdk/pull/3912)  Optimize IntHashTable for encapsulation and ease of use
 - [JDK-8266796](https://bugs.openjdk.java.net/browse/JDK-8266796) [PATCH](https://github.com/openjdk/jdk/pull/3942)  Clean up the unnecessary code in the method UnsharedNameTabl#fromUtf
 - [JDK-8266819](https://bugs.openjdk.java.net/browse/JDK-8266819) [PATCH](https://github.com/openjdk/jdk/pull/3961)  Separate the stop policies from the compile policies completely
+- [JDK-8267355](https://bugs.openjdk.java.net/browse/JDK-8267355) [PATCH](https://github.com/openjdk/jdk/pull/4106)  Adjust the parameters of the method UnicodeReader#digit
+- [JDK-8267361](https://bugs.openjdk.java.net/browse/JDK-8267361) [PATCH](https://github.com/openjdk/jdk/pull/4111)  JavaTokenizer reads octal numbers mistakenly
+- [JDK-8267570](https://bugs.openjdk.java.net/browse/JDK-8267570) [PATCH](https://github.com/openjdk/jdk/pull/4153)  The comment of the class JavacParser is not appropriate
+- [JDK-8267578](https://bugs.openjdk.java.net/browse/JDK-8267578) [PATCH](https://github.com/openjdk/jdk/pull/4157)  Remove unnecessary preview checks
+- [JDK-8267580](https://bugs.openjdk.java.net/browse/JDK-8267580) [PATCH](https://github.com/openjdk/jdk/pull/4158)  The method JavacParser#peekToken is wrong when the first parameter is not zero
+- [JDK-8266239](https://bugs.openjdk.java.net/browse/JDK-8266239) [PATCH](https://github.com/openjdk/jdk/pull/4244)  Some duplicated javac command-line options have repeated effect
+- [JDK-8263926](https://bugs.openjdk.java.net/browse/JDK-8263926) [PATCH](https://github.com/openjdk/jdk/pull/4523)  JavacFileManager.hasExplicitLocation fails with NPE while compiling
+- [JDK-8268670](https://bugs.openjdk.java.net/browse/JDK-8268670) [PATCH](https://github.com/openjdk/jdk17/pull/46)  yield statements doesn't allow ~ or ! unary operators in expression
+- [JDK-8267610](https://bugs.openjdk.java.net/browse/JDK-8267610) [PATCH](https://github.com/openjdk/jdk17/pull/59)  NPE at at jdk.compiler/com.sun.tools.javac.jvm.Code.emitop
 
 
 #### hotspot
 - [JDK-8227106](https://bugs.openjdk.java.net/browse/JDK-8227106) [PATCH](https://github.com/openjdk/jdk/pull/1217)  InitiatingHeapOccupancyPercent is G1-specific but defined in shared
 - [JDK-8250888](https://bugs.openjdk.java.net/browse/JDK-8250888) [PATCH](https://github.com/openjdk/jdk/pull/1319)  nsk/jvmti/scenarios/general_functions/GF08/gf08t001/TestDriver.java fails
+- [JDK-8268368](https://bugs.openjdk.java.net/browse/JDK-8268368) [PATCH](https://github.com/openjdk/jdk/pull/4546)  Adopt cast notation for JavaThread conversions
 
