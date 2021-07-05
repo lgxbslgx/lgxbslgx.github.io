@@ -64,6 +64,7 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8268670](https://bugs.openjdk.java.net/browse/JDK-8268670) [PATCH](https://github.com/openjdk/jdk17/pull/46)  yield statements doesn't allow ~ or ! unary operators in expression
 - [JDK-8267610](https://bugs.openjdk.java.net/browse/JDK-8267610) [PATCH](https://github.com/openjdk/jdk17/pull/59)  NPE at at jdk.compiler/com.sun.tools.javac.jvm.Code.emitop
 - [JDK-8269738](https://bugs.openjdk.java.net/browse/JDK-8269738) [PATCH](https://github.com/openjdk/jdk/pull/4678)  AssertionError when combining pattern maching and function closure
+- [JDK-8269113](https://bugs.openjdk.java.net/browse/JDK-8269113) [PATCH](https://github.com/openjdk/jdk/pull/4679)  Javac throws when compiling switch (null)
 
 
 #### hotspot
