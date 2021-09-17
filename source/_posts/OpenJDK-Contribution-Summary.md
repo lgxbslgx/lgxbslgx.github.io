@@ -66,6 +66,8 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8269738](https://bugs.openjdk.java.net/browse/JDK-8269738) [PATCH](https://github.com/openjdk/jdk/pull/4678)  AssertionError when combining pattern maching and function closure
 - [JDK-8269113](https://bugs.openjdk.java.net/browse/JDK-8269113) [PATCH](https://github.com/openjdk/jdk/pull/4679)  Javac throws when compiling switch (null)
 - [JDK-8268894](https://bugs.openjdk.java.net/browse/JDK-8268894) [PATCH](https://github.com/openjdk/jdk/pull/4749)  forged ASTs can provoke an AIOOBE at com.sun.tools.javac.jvm.ClassWriter::writePosition
+- [JDK-8271254](https://bugs.openjdk.java.net/browse/JDK-8271254) [PATCH](https://github.com/openjdk/jdk/pull/5495)  javac generates unreachable code when using empty semicolon statement
+- [JDK-8273408](https://bugs.openjdk.java.net/browse/JDK-8273408) [PATCH](https://github.com/openjdk/jdk/pull/5511)  java.lang.AssertionError: typeSig ERROR on generated class property of record
 
 
 #### hotspot
