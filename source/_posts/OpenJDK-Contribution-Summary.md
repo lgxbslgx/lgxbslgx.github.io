@@ -76,4 +76,5 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8227106](https://bugs.openjdk.java.net/browse/JDK-8227106) [PATCH](https://github.com/openjdk/jdk/pull/1217)  InitiatingHeapOccupancyPercent is G1-specific but defined in shared
 - [JDK-8250888](https://bugs.openjdk.java.net/browse/JDK-8250888) [PATCH](https://github.com/openjdk/jdk/pull/1319)  nsk/jvmti/scenarios/general_functions/GF08/gf08t001/TestDriver.java fails
 - [JDK-8268368](https://bugs.openjdk.java.net/browse/JDK-8268368) [PATCH](https://github.com/openjdk/jdk/pull/4546)  Adopt cast notation for JavaThread conversions
+- [JDK-8278104](https://bugs.openjdk.java.net/browse/JDK-8278104) [PATCH](https://github.com/openjdk/jdk/pull/6807)  C1 should support the compiler directive 'BreakAtExecute'
 
