@@ -8,18 +8,18 @@
   
     <meta name="keywords" content="lgx,liguoxiong, lgsbslgx, liguoxiong's Blog">
   
-  <meta name="description" content="相关信息最近写了一些关于编译器的文章，发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: 编译器专栏 关于HotSpot的C1编译器C1系列：综述C1系列：构造HIRC1系列：局部优化之规范化C1系列：局部优化之局部值编号C1系列：函数内联C1系列：全局优化之条件表达式消除C1系列：全局优化之块合并">
+  <meta name="description" content="相关信息最近写了一些关于编译器的文章，发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: 编译器专栏 关于HotSpot的C1编译器C1系列：综述C1系列：构造HIRC1系列：规范化C1系列：局部值编号C1系列：函数内联C1系列：条件表达式消除C1系列：块合并">
 <meta name="keywords" content="OpenJDK,Compiler,hotspot,JVM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编译器专栏">
 <meta property="og:url" content="http://lgxbslgx.github.io/2021/12/18/Compiler-article-summary/index.html">
 <meta property="og:site_name" content="Guoxiong Li">
-<meta property="og:description" content="相关信息最近写了一些关于编译器的文章，发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: 编译器专栏 关于HotSpot的C1编译器C1系列：综述C1系列：构造HIRC1系列：局部优化之规范化C1系列：局部优化之局部值编号C1系列：函数内联C1系列：全局优化之条件表达式消除C1系列：全局优化之块合并">
+<meta property="og:description" content="相关信息最近写了一些关于编译器的文章，发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: 编译器专栏 关于HotSpot的C1编译器C1系列：综述C1系列：构造HIRC1系列：规范化C1系列：局部值编号C1系列：函数内联C1系列：条件表达式消除C1系列：块合并">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-12-23T13:35:25.599Z">
+<meta property="og:updated_time" content="2021-12-23T14:28:10.476Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="编译器专栏">
-<meta name="twitter:description" content="相关信息最近写了一些关于编译器的文章，发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: 编译器专栏 关于HotSpot的C1编译器C1系列：综述C1系列：构造HIRC1系列：局部优化之规范化C1系列：局部优化之局部值编号C1系列：函数内联C1系列：全局优化之条件表达式消除C1系列：全局优化之块合并">
+<meta name="twitter:description" content="相关信息最近写了一些关于编译器的文章，发表在知乎专栏。这里也留一个链接，方便读者。专栏地址: 编译器专栏 关于HotSpot的C1编译器C1系列：综述C1系列：构造HIRC1系列：规范化C1系列：局部值编号C1系列：函数内联C1系列：条件表达式消除C1系列：块合并">
   
   
     <link rel="icon" href="/logo.ico">
@@ -120,7 +120,7 @@
     <div class="article-entry post-content" itemprop="articleBody">
             
             <h3 id="相关信息"><a href="#相关信息" class="headerlink" title="相关信息"></a>相关信息</h3><p>最近写了一些关于编译器的文章，发表在知乎专栏。这里也留一个链接，方便读者。<br>专栏地址: <a href="https://www.zhihu.com/column/c_1339958928961069057" target="_blank" rel="noopener">编译器专栏</a></p>
-<h3 id="关于HotSpot的C1编译器"><a href="#关于HotSpot的C1编译器" class="headerlink" title="关于HotSpot的C1编译器"></a>关于HotSpot的C1编译器</h3><p><a href="https://zhuanlan.zhihu.com/p/445389863" target="_blank" rel="noopener">C1系列：综述</a><br><a href="https://zhuanlan.zhihu.com/p/445406054" target="_blank" rel="noopener">C1系列：构造HIR</a><br><a href="https://zhuanlan.zhihu.com/p/445406151" target="_blank" rel="noopener">C1系列：局部优化之规范化</a><br><a href="https://zhuanlan.zhihu.com/p/445406214" target="_blank" rel="noopener">C1系列：局部优化之局部值编号</a><br><a href="https://zhuanlan.zhihu.com/p/445406282" target="_blank" rel="noopener">C1系列：函数内联</a><br><a href="https://zhuanlan.zhihu.com/p/448001926" target="_blank" rel="noopener">C1系列：全局优化之条件表达式消除</a><br><a href="https://zhuanlan.zhihu.com/p/445406417" target="_blank" rel="noopener">C1系列：全局优化之块合并</a></p>
+<h3 id="关于HotSpot的C1编译器"><a href="#关于HotSpot的C1编译器" class="headerlink" title="关于HotSpot的C1编译器"></a>关于HotSpot的C1编译器</h3><p><a href="https://zhuanlan.zhihu.com/p/445389863" target="_blank" rel="noopener">C1系列：综述</a><br><a href="https://zhuanlan.zhihu.com/p/445406054" target="_blank" rel="noopener">C1系列：构造HIR</a><br><a href="https://zhuanlan.zhihu.com/p/445406151" target="_blank" rel="noopener">C1系列：规范化</a><br><a href="https://zhuanlan.zhihu.com/p/445406214" target="_blank" rel="noopener">C1系列：局部值编号</a><br><a href="https://zhuanlan.zhihu.com/p/445406282" target="_blank" rel="noopener">C1系列：函数内联</a><br><a href="https://zhuanlan.zhihu.com/p/448001926" target="_blank" rel="noopener">C1系列：条件表达式消除</a><br><a href="https://zhuanlan.zhihu.com/p/445406417" target="_blank" rel="noopener">C1系列：块合并</a></p>
 
             <div class="post-copyright">
 
