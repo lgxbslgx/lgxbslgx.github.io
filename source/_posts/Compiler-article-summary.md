@@ -16,5 +16,9 @@ tags:
 ### 关于HotSpot的C1编译器
 [C1系列：综述](https://zhuanlan.zhihu.com/p/445389863)
 [C1系列：构造HIR](https://zhuanlan.zhihu.com/p/445406054)
-[C1系列：局部优化之规范化](https://zhuanlan.zhihu.com/p/445406151)
+[C1系列：规范化](https://zhuanlan.zhihu.com/p/445406151)
+[C1系列：局部值编号](https://zhuanlan.zhihu.com/p/445406214)
+[C1系列：函数内联](https://zhuanlan.zhihu.com/p/445406282)
+[C1系列：条件表达式消除](https://zhuanlan.zhihu.com/p/448001926)
+[C1系列：块合并](https://zhuanlan.zhihu.com/p/445406417)
 
