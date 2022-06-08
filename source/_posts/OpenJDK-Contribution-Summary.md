@@ -70,6 +70,7 @@ The JDK Project is the JDK main-line development of OpenJDK.
 - [JDK-8273408](https://bugs.openjdk.java.net/browse/JDK-8273408) [PATCH](https://github.com/openjdk/jdk/pull/5511)  java.lang.AssertionError: typeSig ERROR on generated class property of record
 - [JDK-8274942](https://bugs.openjdk.java.net/browse/JDK-8274942) [PATCH](https://github.com/openjdk/jdk/pull/6210)  AssertionError at jdk.compiler/com.sun.tools.javac.util.Assert.error(Assert.java:155)
 - [JDK-8276836](https://bugs.openjdk.java.net/browse/JDK-8276836) [PATCH](https://github.com/openjdk/jdk/pull/6350)  Error in javac caused by switch expression without result expressions: Internal error: stack sim error
+- [JDK-8286573](https://bugs.openjdk.java.net/browse/JDK-8286573) [PATCH](https://github.com/openjdk/jdk/pull/8648)  Remove the unnecessary method Attr#attribTopLevel and its usage
 
 
 #### hotspot
